@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-
-
-        System.out.println(Arrays.toString(findMin(readIntegers())));
+        System.out.println(Arrays.toString(readIntegers()));
+        System.out.println(findMin(readIntegers()));
         System.out.println("-".repeat(20));
 
     }
@@ -35,7 +34,7 @@ public class Main {
         return numbers;
     }
 
-    public static int[] findMin(int[] array) {
+    public static int findMin(int[] array) {
 
         boolean flag = true;
         while (flag) {
@@ -52,7 +51,7 @@ public class Main {
         }
         System.out.println("-".repeat(20));
         System.out.print("Sorted List: ");
-        return array;
+        return array[0];
     }
 
 }
