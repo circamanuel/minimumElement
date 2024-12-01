@@ -25,7 +25,7 @@ public class Main {
 // iterates through the String array and inserts the index value to the (int) numbers array.
         for (int i = 0; i < numberStr.length; i++) {
             try {
-                numbers[i] = Integer.parseInt(numberStr[i]);
+                numbers[i] = Integer.parseInt(numberStr[i].trim());
             }
             catch (NumberFormatException nfe) {
                 numbers[i] = 0;
